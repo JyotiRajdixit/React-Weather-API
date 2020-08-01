@@ -25,6 +25,7 @@ class App extends React.Component {
       })*/
   }
   render() {
+    console.log(this.state.details)
     if(!this.state.isLoading)
      {
       var icon = "http://openweathermap.org/img/w/" + this.state.details.weather[0].icon + ".png";
@@ -67,4 +68,4 @@ class App extends React.Component {
 ReactDOM.render(
   <App />,
   document.getElementById('react-app')
-); 
+);
