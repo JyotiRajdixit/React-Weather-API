@@ -38,10 +38,10 @@ class App extends React.Component {
      // boxShadow: "1px 2px 5px 1px grey",
       boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
       padding: "5px",
-    }
+    }   
     return (
       <div>
-        {this.state.isLoading ? <h1>Loading...!</h1> :
+       {this.state.isLoading ? <h1>Loading...!</h1> :
         <center>
          <div style={mystyle}>
           <h1>
