@@ -25,7 +25,6 @@ class App extends React.Component {
       })*/
   }
   render() {
-    console.log(this.state.details)
     if(!this.state.isLoading)
      {
       var icon = "http://openweathermap.org/img/w/" + this.state.details.weather[0].icon + ".png";
@@ -53,7 +52,7 @@ class App extends React.Component {
            Indore
           </h1>
           <h2>
-           {this.state.details.main.temp}
+           {this.state.details.main.temp} °C
           </h2>
           <img src={icon} width="100px"/>
           <h3>
