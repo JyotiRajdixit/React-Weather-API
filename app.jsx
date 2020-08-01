@@ -9,20 +9,20 @@ class App extends React.Component {
       details: null,
     }
   }
-  async componentDidMount() {
-    const url ="http://api.openweathermap.org/data/2.5/forecast?q=Indore&units=metric&APPID=c0996d55bf272a6558d347f6c69e60d1";
+  componentDidMount() {
+    /*const url ="http://api.openweathermap.org/data/2.5/forecast?q=Indore&units=metric&APPID=c0996d55bf272a6558d347f6c69e60d1";
     const response = await fetch(url);
     const data = await response.json();
     this.setState({
       details: data.list[0],
       isLoading: false,
-    })
-    /*fetch("http://api.openweathermap.org/data/2.5/forecast?q=Indore&units=metric&APPID=c0996d55bf272a6558d347f6c69e60d1").then(response => response.json()).then(data => {
+    })*/
+    fetch("http://api.openweathermap.org/data/2.5/forecast?q=Indore&units=metric&APPID=c0996d55bf272a6558d347f6c69e60d1").then(response => response.json()).then(data => {
         this.setState({
          isLoading: false,
-         character: data
+         details: data.list[0]
         })
-      })*/
+      })
   }
   render() {
     console.log(this.state.details)
