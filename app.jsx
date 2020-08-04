@@ -41,7 +41,9 @@ class App extends React.Component {
     }   
     return (
       <div>
-       {this.state.isLoading ? <h1>Loading...!</h1> :
+       if(this.state.isLoading)
+        {<h1>Loading...!</h1>}
+       else{
         <center>
          <div style={mystyle}>
           <h1>
