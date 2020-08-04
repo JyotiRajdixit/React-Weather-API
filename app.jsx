@@ -15,7 +15,7 @@ class App extends React.Component {
     /*const response = await fetch(url);
     const data = await response.json();
     this.setState({
-      details: data.list[0],
+      character: data.list[0],
       isLoading: false,
     })*/
     fetch(url).then(response => response.json()).then(data => {
